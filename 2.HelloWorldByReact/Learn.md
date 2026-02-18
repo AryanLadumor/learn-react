@@ -1,5 +1,5 @@
-# 📘 React Hello World — Notes
-
+# ⚛️ React Chapter-2 :  Hello World
+  > here We will simply Print Hello World by React using js library --> react  and react-dom
 ---
 
 # 🚀 1. Core Philosophy
@@ -15,7 +15,7 @@ Examples:
 
 
 ## 📌 Pure JavaScript
-- React is ultimately JavaScript.
+- React is ultimately JavaScript.that Is React is just a javascript library
 - Everything written in React becomes JavaScript objects.
 - JSX (gonna learn later) is just syntactic sugar over JavaScript.
 
@@ -112,9 +112,7 @@ const heading = React.createElement("h1", {}, "Hello World");
 
 - This function DOES NOT create real HTML immediately.
 - It creates a JavaScript object representing UI.
-
 Check:
-
 ```js
 console.log(heading);
 ```
@@ -160,7 +158,7 @@ Example:
 Used for:
 - HTML attributes
 - Event handlers
-- Data passing
+- Data passing , later on we will be focusing on taht
 
 
 #### 3️⃣ Children
