@@ -77,7 +77,7 @@ Instead of opening index.html manually or using a standard Live Server extension
 
 Command to Start Development:
 ```bash
-npx parcel index.html
+npx parcel src/index.html
 ```
 
 - **npx:** This command executes a package locally installed in your node_modules.
@@ -114,7 +114,7 @@ When you are ready to ship your application, you need a production-ready build. 
 
 Command for Production Build:
 ```bash
-npx parcel build index.html
+npx parcel build src/index.html
 ```
 
 ---

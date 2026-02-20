@@ -62,7 +62,7 @@ const parent = React.createElement("div", { id: "parent" }, [
 
 * **Replacement**: Any existing content inside the `#root` div present in the html file  is replaced by the React element once rendered as the script tag in html files runs.
 
-![alt text](image.png)
+![alt text](../images/image.png)
 
 ## ⚠️ Problem With Manual Structure
 
