@@ -118,10 +118,10 @@ console.log(jsxheading);
 Both are the exact same things. Just a difference of readability and complexity. In the end, JSX is transpiled into `createElement` and as we discussed already in Chapter-2, it's just a JavaScript Object.
 
 **You can visit [babeljs.io](https://babeljs.io/) to check what the code is internally converted to by giving your JSX to its testing compiler.It takes next-gen JS and gives you browser compatible Js**
-
+Example
 ![alt text](../images/image-2.png)
 
-Babel does many things as well — you can explore it.
+Babel does many things as well — you can explore it fro the official website.
 
 ---
 
@@ -182,4 +182,4 @@ Because JSX is JavaScript, we cannot use reserved JS keywords as attributes.
 
 ##### From now on, we will leave `createElement` behind and use JSX for everything!
 
-> In next chapter we will explore What is component in react andthe importance of components
+> In next chapter we will explore What is component in react and the importance of components

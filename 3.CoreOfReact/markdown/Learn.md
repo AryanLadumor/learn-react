@@ -92,5 +92,5 @@ Parcel is a build tool (bundler) that helps us:
 
 👉 Parcel reduces complexity and helps maintain clean architecture.
 
-> For now  before Ending the Chapter just understand that Parcel will simplify project setup.
+> For now  before Ending the Chapter just understand that Parcel will simplify project setup.But in Next Chapter We will watching how powerful Parcel Is.
 
