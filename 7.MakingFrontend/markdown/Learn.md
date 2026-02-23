@@ -174,6 +174,6 @@ const cardStyle = {
 - **Keys:** Crucial for React performance and tracking items.
 - **Config Driven UI:** Architecture where data controls the interface.
 
->In Next Chapter: We will use the  folder structure as same as React App has.We will explore Hooks, Reconciliation, and React Fiber—the "secret sauce" that makes React incredibly fast!
+>In Next Chapter: We will use the  folder structure as same as React App has.We will explore Hooks
 
 
