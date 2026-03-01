@@ -65,6 +65,24 @@
     border: 1px solid black;
     height: 180vh;
 }
+
+.filter{
+    display: flex;
+}
+.search{
+    padding : 5px;
+    margin : 10px;
+    cursor: pointer;
+}
+.search > button{
+    font-size: 20px;
+    width: 100px;
+}
+.search > .search-box{
+    font-size: 20px;
+    width: 300px;
+}
+
 .filter-btn{
     padding : 5px;
     margin : 10px;

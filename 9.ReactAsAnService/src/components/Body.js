@@ -4,10 +4,11 @@ import RestaurentCard from "./RestaurentCard";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-
-
   // let [restaurantsList, setRestaurantsList] = useState(realTimeRestarantData);
   let [restaurantsList, setRestaurantsList] = useState([]); // initialy list sholuld be empty
+  let [filterredRestaurent, setFilterredRestaurent] = useState([]);
+  
+  let [searchText, setSearchText] = useState("");
 
   //This is also a normal JS Funtion
   // 2 parameter  1=> callback  2=> dependenci array
@@ -33,6 +34,10 @@ const Body = () => {
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants,
     );
+    setFilterredRestaurent(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants,
+    );
     //from here we no need of hardcoded data
   };
 
@@ -45,9 +50,33 @@ const Body = () => {
 
   //let's do it int the final return only
 
+  console.log("Body Render");
   return (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input
+            type="text"
+            className="search-box"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+          />
+          <button
+            onClick={() => {
+              //Filter the restaurent cards and update the UI
+              console.log(searchText);
+              let filterredRes = restaurantsList.filter((o) =>
+                o.info.name.toLowerCase().includes(searchText.toLowerCase()),
+              );
+              setFilterredRestaurent(filterredRes);
+            }}
+          >
+            Search
+          </button>
+        </div>
+
         <button
           className="filter-btn"
           onClick={() => {
@@ -66,13 +95,15 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div className="res-container">
-          {restaurantsList.map((obj) => (
-            <RestaurentCard resData={obj} key={obj.info.id} />
-          ))}
+          {filterredRestaurent.length === 0 ? (
+            <div>No Such Restaurent Found</div>
+          ) : (
+            filterredRestaurent.map((obj) => (
+              <RestaurentCard resData={obj} key={obj.info.id} />
+            ))
+          )}
         </div>
       )}
-
-
     </div>
   );
 };
